@@ -13,15 +13,18 @@ public class Solution2 {
                 tracker++;
             }
         }
+
         displayArray(numbers);
     }
 
     public static void displayArray(int[] arr) {
         int length = arr.length;
         System.out.print("\n{ ");
+
         for (int i = 0; i < length; i++) {
             System.out.print(i != length - 1 ? arr[i] + ", " : arr[i] + " ");
         }
+
         System.out.print("}\n");
     }
 }
