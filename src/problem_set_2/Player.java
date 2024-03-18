@@ -11,7 +11,7 @@ public class Player {
     private double speed;
     private double salary;
     
-    public Player(String name, String position, String current_team, byte age, String nationality, double height,
+    Player(String name, String position, String current_team, byte age, String nationality, double height,
             double weight, double speed, double salary) {
         this.name = name;
         this.position = position;
@@ -104,6 +104,6 @@ public class Player {
     }
 
     public static void main(String[] args) {
-        Player p = new Player("mohamed", "rb", "madrid", 26, "egyptian", 181, 72, 60, 100000.500);
+        Player p = new Player("mohamed", "rb", "madrid", (byte)26, "egyptian", 181.0, 72.0, 60.0, 100000.500);
     }
 }
